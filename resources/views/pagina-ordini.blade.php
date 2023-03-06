@@ -3,14 +3,14 @@
 
 @section('content')
  
-<h1>Lista dei Clienti:</h1>
+<h1>Lista degli Ordini:</h1>
     @php 
         $nomi=['Ordine 1', 'Ordine 2', 'Ordine 3'];
     @endphp
 
     <ul>
     @foreach($nomi as $nome)
-        <tr><td>{{$nome}}</td></tr>
+        <li>{{$nome}}</li>
     @endforeach
     </ul>
 @endsection
